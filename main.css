@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Bakbak One', cursive;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.top-container{
+  height: 100px;
+  margin: 0;
+  top:0;
+  left: 0;
+  padding: 0 20px;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  z-index: 1000;
+  background: #3d3d3d;
+  background-image:url(https://wallpaperaccess.com/full/1687320.jpg);
+}
+#header-image{
+  height: 40px;
+}
+nav > ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-around;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  cursor: pointer;
+}
+
+/*.fixed{
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: 20;
+}*/
+.middle-container{
+  top:25%;
+  left: 36%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  max-width: 400px;
+}
+#submit{
+  display: block;
+margin-left: 39%;
+margin-top: 20px;
+}
+.video-div{
+  display: block;
+  text-align: left;
+}
+#video{
+position: relative;
+margin-top: 20px;
+width: 95%;
+}
+#how{
+  text-decoration: underline;
+  color: blue;
+  font-style: italic;
+  font-weight: bold;
+}
+#pricing{
+  margin-top: 60px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.price{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      text-align: center;
+      width: calc(100% / 3);
+      font-weight: 700;
+      margin: 10px;
+      border: 1px solid #000;
+      border-radius: 3px;
+      z-index: 100;
+}
+.product >.level{
+  background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+ol{
+  list-style-type: none;
+}
+.btn{
+  border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+footer{
+  position: relative;
+  display: flex;
+  margin: auto;
+}
+@media screen and (min-width:760px) and (max-width 1024px)  {
+.top-container .middle{
+  width: 50%;
+}
+}
+@media screen and (min-width 480px) and (max-width:780px) {
+  .top-container .middle{
+    width: 100%;
+  }
+  .middle{
+    text-align: center;
+    margin: 0;
+  }
+}
